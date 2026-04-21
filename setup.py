@@ -52,6 +52,8 @@ EXTRAS_REQUIRE = {
         "numpy>=1.24.0",
         # Added ipykernel so I can use this in Jupyter notebooks without hassle
         "ipykernel>=6.0.0",
+        # matplotlib is handy for plotting training loss curves during experiments
+        "matplotlib>=3.7.0",
     ],
 }
 
