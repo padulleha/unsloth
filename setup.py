@@ -87,12 +87,12 @@ setup(
         "Programming Language :: Python :: 3.9",
         "Programming Language :: Python :: 3.10",
         "Programming Language :: Python :: 3.11",
-        "Topic :: Scientific/Engineering :: Artificial Intelligence],
-    keywords[
-        "llora",
-        "transformlearning",
+        "Topic :: Scientific/Engineering :: Artificial Intelligence",
+    ],
+    keywords=[
+        "lora",
+        "transfer-learning",
         "deep-learning",
     ],
     include_package_data=True,
-    zip_safe=False,
-)
+    zip_safe=ifiers and keywords fields
