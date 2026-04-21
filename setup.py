@@ -50,6 +50,8 @@ EXTRAS_REQUIRE = {
         "isort>=5.12.0",
         "flake8>=6.0.0",
         "numpy>=1.24.0",
+        # Added ipykernel so I can use this in Jupyter notebooks without hassle
+        "ipykernel>=6.0.0",
     ],
 }
 
