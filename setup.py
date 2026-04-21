@@ -54,6 +54,8 @@ EXTRAS_REQUIRE = {
         "ipykernel>=6.0.0",
         # matplotlib is handy for plotting training loss curves during experiments
         "matplotlib>=3.7.0",
+        # wandb makes it easy to track runs across different experiments
+        "wandb>=0.16.0",
     ],
 }
 
@@ -96,10 +98,4 @@ setup(
         "Topic :: Scientific/Engineering :: Artificial Intelligence",
     ],
     keywords=[
-        "lora",
-        "transfer-learning",
-        "deep-learning",
-    ],
-    include_package_data=True,
-    zip_safe=False,
-)
+        "l
