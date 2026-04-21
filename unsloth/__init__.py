@@ -5,6 +5,9 @@
 
 This package provides efficient fine-tuning capabilities for large language models
 using custom CUDA kernels and memory optimizations.
+
+Personal fork notes:
+- Added patch_version() utility for quick version comparison
 """
 
 __version__ = "2024.12.0"
@@ -40,3 +43,12 @@ __all__ = [
 def get_version():
     """Return the current version of unsloth."""
     return __version__
+
+def patch_version():
+    """Return the version as a tuple of ints for easy comparison.
+
+    Example:
+        >>> if patch_version() >= (2024, 12, 0):
+        ...     print("New enough version")
+    """
+    return tuple(int(x) for x in __version__.split("."))
