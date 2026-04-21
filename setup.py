@@ -56,6 +56,8 @@ EXTRAS_REQUIRE = {
         "matplotlib>=3.7.0",
         # wandb makes it easy to track runs across different experiments
         "wandb>=0.16.0",
+        # added rich for nicer tracebacks and console output during local dev
+        "rich>=13.0.0",
     ],
 }
 
@@ -95,7 +97,5 @@ setup(
         "Programming Language :: Python :: 3.9",
         "Programming Language :: Python :: 3.10",
         "Programming Language :: Python :: 3.11",
-        "Topic :: Scientific/Engineering :: Artificial Intelligence",
     ],
-    keywords=[
-        "l
+)
