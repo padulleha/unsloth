@@ -42,12 +42,14 @@ EXTRAS_REQUIRE = {
         "gguf>=0.6.0",
         "llama-cpp-python>=0.2.0",
     ],
+    # Added numpy here since I kept running into missing numpy errors during dev
     "dev": [
         "pytest>=7.0.0",
         "pytest-cov>=4.0.0",
         "black>=23.0.0",
         "isort>=5.12.0",
         "flake8>=6.0.0",
+        "numpy>=1.24.0",
     ],
 }
 
@@ -95,4 +97,5 @@ setup(
         "deep-learning",
     ],
     include_package_data=True,
-    zip_safe=ifiers and keywords fields
+    zip_safe=False,
+)
