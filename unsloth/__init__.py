@@ -9,6 +9,8 @@ using custom CUDA kernels and memory optimizations.
 Personal fork notes:
 - Added patch_version() utility for quick version comparison
 - Added version_info tuple (similar to sys.version_info) for convenience
+- Fixed redundancy: patch_version() and version_info do the same thing;
+  patch_version() now just returns version_info directly
 """
 
 __version__ = "2024.12.0"
@@ -52,8 +54,11 @@ def get_version():
 def patch_version():
     """Return the version as a tuple of ints for easy comparison.
 
+    Note: This is equivalent to accessing `version_info` directly.
+
     Example:
         >>> if patch_version() >= (2024, 12, 0):
         ...     print("New enough version")
     """
-    return tuple(int(x) for x in __version__.split("."))
+    # Reuse version_info instead of re-parsing __version__ every call
+    return version_info
