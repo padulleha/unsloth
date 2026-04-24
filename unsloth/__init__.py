@@ -8,11 +8,15 @@ using custom CUDA kernels and memory optimizations.
 
 Personal fork notes:
 - Added patch_version() utility for quick version comparison
+- Added version_info tuple (similar to sys.version_info) for convenience
 """
 
 __version__ = "2024.12.0"
 __author__ = "Unsloth Team"
 __license__ = "Apache 2.0"
+
+# Convenient version tuple, similar to how sys.version_info works
+version_info = tuple(int(x) for x in __version__.split("."))
 
 from unsloth.models import (
     FastLanguageModel,
@@ -38,6 +42,7 @@ __all__ = [
     "get_chat_template",
     "standardize_sharegpt",
     "train_on_responses_only",
+    "version_info",
 ]
 
 def get_version():
