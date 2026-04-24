@@ -58,6 +58,8 @@ EXTRAS_REQUIRE = {
         "wandb>=0.16.0",
         # added rich for nicer tracebacks and console output during local dev
         "rich>=13.0.0",
+        # added ipywidgets so tqdm progress bars render properly in Jupyter
+        "ipywidgets>=8.0.0",
     ],
 }
 
@@ -95,7 +97,3 @@ setup(
         "Operating System :: OS Independent",
         "Programming Language :: Python :: 3",
         "Programming Language :: Python :: 3.9",
-        "Programming Language :: Python :: 3.10",
-        "Programming Language :: Python :: 3.11",
-    ],
-)
