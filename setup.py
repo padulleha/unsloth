@@ -62,6 +62,8 @@ EXTRAS_REQUIRE = {
         "ipywidgets>=8.0.0",
         # added tensorboard as an alternative to wandb for offline experiment tracking
         "tensorboard>=2.14.0",
+        # added scipy - needed for some evaluation scripts I've been writing
+        "scipy>=1.11.0",
     ],
 }
 
@@ -94,8 +96,4 @@ setup(
     classifiers=[
         "Development Status :: 4 - Beta",
         "Intended Audience :: Developers",
-        "Intended Audience :: Science/Research",
-        "License :: OSI Approved :: Apache Software License",
-        "Operating System :: OS Indepen",
-    ],
-)
+        "Intended Audience :: Sc
