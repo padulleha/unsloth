@@ -60,6 +60,8 @@ EXTRAS_REQUIRE = {
         "rich>=13.0.0",
         # added ipywidgets so tqdm progress bars render properly in Jupyter
         "ipywidgets>=8.0.0",
+        # added tensorboard as an alternative to wandb for offline experiment tracking
+        "tensorboard>=2.14.0",
     ],
 }
 
@@ -94,6 +96,6 @@ setup(
         "Intended Audience :: Developers",
         "Intended Audience :: Science/Research",
         "License :: OSI Approved :: Apache Software License",
-        "Operating System :: OS Independent",
-        "Programming Language :: Python :: 3",
-        "Programming Language :: Python :: 3.9",
+        "Operating System :: OS Indepen",
+    ],
+)
