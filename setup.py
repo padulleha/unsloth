@@ -64,6 +64,8 @@ EXTRAS_REQUIRE = {
         "tensorboard>=2.14.0",
         # added scipy - needed for some evaluation scripts I've been writing
         "scipy>=1.11.0",
+        # added httpx for testing any API integrations locally
+        "httpx>=0.25.0",
     ],
 }
 
@@ -94,6 +96,4 @@ setup(
     install_requires=INSTALL_REQUIRES,
     extras_require=EXTRAS_REQUIRE,
     classifiers=[
-        "Development Status :: 4 - Beta",
-        "Intended Audience :: Developers",
-        "Intended Audience :: Sc
+        "Develo
