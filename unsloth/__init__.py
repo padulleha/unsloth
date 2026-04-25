@@ -11,6 +11,7 @@ Personal fork notes:
 - Added version_info tuple (similar to sys.version_info) for convenience
 - Fixed redundancy: patch_version() and version_info do the same thing;
   patch_version() now just returns version_info directly
+- Added get_version_string() helper for formatted version display
 """
 
 __version__ = "2024.12.0"
@@ -45,11 +46,21 @@ __all__ = [
     "standardize_sharegpt",
     "train_on_responses_only",
     "version_info",
+    "get_version_string",
 ]
 
 def get_version():
     """Return the current version of unsloth."""
     return __version__
+
+def get_version_string():
+    """Return a human-readable version string with the package name.
+
+    Example:
+        >>> print(get_version_string())
+        unsloth v2024.12.0
+    """
+    return f"unsloth v{__version__}"
 
 def patch_version():
     """Return the version as a tuple of ints for easy comparison.
