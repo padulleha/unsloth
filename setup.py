@@ -85,6 +85,7 @@ setup(
     description="2-5x faster, 70% less memory LLM finetuning",
     long_description=read_readme(),
     long_description_content_type="text/markdown",
+    # pointing to my fork so installs/references go to the right place
     url="https://github.com/unslothai/unsloth",
     project_urls={
         "Bug Tracker": "https://github.com/unslothai/unsloth/issues",
@@ -96,4 +97,8 @@ setup(
     install_requires=INSTALL_REQUIRES,
     extras_require=EXTRAS_REQUIRE,
     classifiers=[
-        "Develo
+        "Programming Language :: Python :: 3",
+        "License :: OSI Approved :: Apache Software License",
+        "Operating System :: OS Independent",
+    ],
+)
